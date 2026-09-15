@@ -1,0 +1,16 @@
+D: count
+I: 0
+
+L: loop
+    T: count
+    M: count != 100
+        J: add
+        J: end
+
+L: add
+    D: count
+    I: count+1
+    J: loop
+
+L: end
+    S:
