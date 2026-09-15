@@ -1,0 +1,25 @@
+T: "What's your name?"
+
+D: text
+I: A
+
+O: "Hello "
+O: text
+T: "!"
+
+T: "How old are you?"
+
+D: age
+I: A
+
+M: age >= 18
+J: adult
+J: underage
+
+L: adult
+T: "You can drink"
+S:
+
+L: underage
+T: "You can't drink!"
+S:
